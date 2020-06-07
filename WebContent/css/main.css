@@ -1,0 +1,199 @@
+@font-face { font-family: 'SCDream'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff'); font-weight: 100; }
+@font-face { font-family: 'SCDream'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff'); font-weight: 200; }
+@font-face { font-family: 'SCDream'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: 300; }
+@font-face { font-family: 'SCDream'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff'); font-weight: 400; }
+@font-face { font-family: 'SCDream'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff'); font-weight: 500; }
+@font-face { font-family: 'SCDream'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff'); font-weight: 600; }
+@font-face { font-family: 'SCDream'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff'); font-weight: 700; }
+@font-face { font-family: 'SCDream'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff'); font-weight: 800; }
+@font-face { font-family: 'SCDream'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff'); font-weight: 900; }
+
+.shadow {box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);}
+
+.dark-bg{ 
+    width:100%;
+    height:100%; 
+    position: absolute; /* 다른 요소들 위로 겹쳐질 수 있게함 */
+}
+
+.dark-bg--strict{background-color:rgba(0, 0, 0, 0.6);}
+.dark-bg--lenient{background-color:rgba(0, 0, 0, 0.4);}
+
+/* 해당 태그 요소의 위치를 상단을 기준으로 얼마나 밑에 위치시킬건지 지정하는 속성 */
+.top10{top: 10%;}
+.top20{top: 20%;}
+.top30{top: 30%;}
+.top40{top: 40%;}
+.top45{top: 45%;}
+.top50{top: 50%;}
+.top60{top: 60%;}
+.top65{top: 65%;}
+.top70{top: 70%;}
+.top80{top: 80%;}
+.top90{top: 90%;}
+.top100{top: 100%;}
+
+html {
+    scroll-behavior: smooth;    /* 웹 페이지 내의 스크롤에 부드러운 애니메이션 효과를 줌 */
+}
+
+body{
+    font-family: "SCDream", "Noto Sans KR",sans-serif;
+}
+        
+.content-container {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    transform: translateY(-50%);
+    
+    width : 100%;
+    /* 수평 중앙 정렬을 위한 속성 
+    display : flex; 
+    align-items:center;  수직 중앙 
+    justify-content : center;  수평 중앙 
+    */
+}
+
+
+span {
+    font-size: 3.5em;
+    font-style: normal;
+    color: #fff;
+}
+
+.bold{font-weight: bold;}
+
+.section1 {
+    background-image : url("../images/background01.jpg");
+    background-size : 100%;
+}
+
+.header__logo{
+    width : 25%;
+    height : 20%;
+
+    margin-top : 5%;
+    margin-bottom: 40px;
+}
+
+
+.section2{
+    background-image : url("../images/background03.jpg");
+    background-size : 100%;
+    /* 수직 중앙 정렬 */
+    display:flex; 
+    align-items:center;
+}
+
+.resume{
+    width : 28%;
+    background-color : white;
+    border-radius: 5px;
+    margin-left : auto; margin-right : auto;
+}
+
+.resume__title{
+    padding-top: 10px;
+    text-align : center; 
+    color : black; 
+    border-bottom : 1px solid black; 
+    width : 40%; 
+    
+    /* 수평 중앙 정렬 */
+    margin-left : auto; 
+    margin-right : auto;
+}
+
+.resume__th--nopadding{padding : 2 2 !important;}
+.resume__img{width : 80px;}
+
+/* 테이블 css */
+.resume__table {
+    margin-left : auto; 
+    margin-right : auto; 
+    background-color: #fff; 
+    border-collapse : collapse; 
+    border-spacing:0;
+}
+
+.resume__td, .resume__th{
+    border-color:black; 
+    border-style:solid; 
+    border-width:1px; 
+    font-family:Arial, sans-serif; 
+    font-size:14px;
+    padding:10px 5px; 
+    overflow:hidden; 
+    word-break:normal; 
+    text-align:center; 
+    vertical-align:middle;
+}
+
+.section3 {
+    background-color:  #A199E2;
+    display : flex; /* 3등분 하기 위한 속성 */
+}
+
+.section3__project{
+    position: relative;
+    flex : 1;    /* 3등분 하기 위한 속성 */
+}
+
+.section3__img{
+    height : 100%; 
+    width : 100%;
+    filter: brightness(75%); /* 이미지 밝기 조절 */
+}
+
+.section3__text{
+    color : white;
+    /* 이미지 위에 text를 작성하기 위한 속성 */
+    position: absolute;
+    left : 50%;
+    top : 50%;
+    transform: translate( -50%, -50% ); /* 왼쪽 위 꼭짓점의 위치가 위에서 50%, 왼쪽에서 50%이므로, 텍스트가 정가운데에 있지 않으므로 transform 속성을 추가 */
+}
+
+
+.section4 {
+    background-color:  #CC938E;
+    background-image : url("../images/club.jpg");
+    position: relative;
+}
+
+.section4__title{
+    display: block;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+.club {
+    display: inline-block;
+    margin-right : 3%;
+    margin-left : 3%;
+}
+
+.club__text{
+    font-size: 1em;
+    font-style: normal;
+    color: #fff;
+    margin-top: 20px;
+}
+.club *{display : block;}
+
+
+.section5 {
+    background-image : url("../images/mono.jpg"); 
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
+.section5 img{ border-radius: 5px}
+.section5__text{
+    font-size: 3em;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    color : #787878
+}
