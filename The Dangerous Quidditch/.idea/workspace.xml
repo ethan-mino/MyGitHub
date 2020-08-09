@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3cad8655-ad0d-44de-b6be-9dffc34a6a76" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="harry" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bywOezt4z4VMAFvRgJkdhUmh8E" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled1" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager" selected="Python.The Dangerous Quidditch">
+    <configuration name="The Dangerous Quidditch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="harry" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/The Dangerous Quidditch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="game1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="harry" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="game2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="harry" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pygame_functions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="harry" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pygame_functions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="harry" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.The Dangerous Quidditch" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.game2" />
+        <item itemvalue="Python.pygame_functions" />
+        <item itemvalue="Python.game1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3cad8655-ad0d-44de-b6be-9dffc34a6a76" name="Default Changelist" comment="" />
+      <created>1589617610854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589617610854</updated>
+      <workItem from="1589617612046" duration="733000" />
+      <workItem from="1589618361759" duration="438000" />
+      <workItem from="1589618810484" duration="20801000" />
+      <workItem from="1589694735267" duration="696000" />
+      <workItem from="1589695708078" duration="25907000" />
+      <workItem from="1590792261526" duration="4389000" />
+      <workItem from="1590799851249" duration="21261000" />
+      <workItem from="1591018575886" duration="70255000" />
+      <workItem from="1591170439035" duration="64000" />
+      <workItem from="1591170516696" duration="128000" />
+      <workItem from="1591170652313" duration="30000" />
+      <workItem from="1591170695493" duration="7071000" />
+      <workItem from="1591238612540" duration="5125000" />
+      <workItem from="1591669571178" duration="10907000" />
+      <workItem from="1591761406908" duration="10228000" />
+      <workItem from="1591782059752" duration="16036000" />
+      <workItem from="1591830974746" duration="6143000" />
+      <workItem from="1591948305132" duration="604000" />
+      <workItem from="1591950240034" duration="752000" />
+      <workItem from="1591951011003" duration="63000" />
+      <workItem from="1591951087182" duration="55000" />
+      <workItem from="1591951156419" duration="207000" />
+      <workItem from="1591951375475" duration="52911000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="167" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589618616121">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="167" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589618616121" />
+    <state x="920" y="292" key="FileChooserDialogImpl" timestamp="1591979162642">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="690" y="217" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591170648048" />
+    <state x="920" y="292" key="FileChooserDialogImpl/3840.0.1920.1020/0.0.2560.1400@0.0.2560.1400" timestamp="1591979162642" />
+    <state width="2505" height="159" key="GridCell.Tab.0.bottom" timestamp="1592136593864">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1663" height="277" key="GridCell.Tab.0.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1591781170096" />
+    <state width="1865" height="251" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591191633259" />
+    <state width="1865" height="363" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591825457255" />
+    <state width="2505" height="159" key="GridCell.Tab.0.bottom/3840.0.1920.1020/0.0.2560.1400@0.0.2560.1400" timestamp="1592136593864" />
+    <state width="2505" height="159" key="GridCell.Tab.0.center" timestamp="1592136593864">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1663" height="277" key="GridCell.Tab.0.center/0.0.1707.1027@0.0.1707.1027" timestamp="1591781170096" />
+    <state width="1865" height="251" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591191633259" />
+    <state width="1865" height="363" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591825457255" />
+    <state width="2505" height="159" key="GridCell.Tab.0.center/3840.0.1920.1020/0.0.2560.1400@0.0.2560.1400" timestamp="1592136593864" />
+    <state width="2505" height="159" key="GridCell.Tab.0.left" timestamp="1592136593864">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1663" height="277" key="GridCell.Tab.0.left/0.0.1707.1027@0.0.1707.1027" timestamp="1591781170096" />
+    <state width="1865" height="251" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591191633259" />
+    <state width="1865" height="363" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591825457255" />
+    <state width="2505" height="159" key="GridCell.Tab.0.left/3840.0.1920.1020/0.0.2560.1400@0.0.2560.1400" timestamp="1592136593864" />
+    <state width="2505" height="159" key="GridCell.Tab.0.right" timestamp="1592136593864">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1663" height="277" key="GridCell.Tab.0.right/0.0.1707.1027@0.0.1707.1027" timestamp="1591781170096" />
+    <state width="1865" height="251" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591191633259" />
+    <state width="1865" height="363" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591825457255" />
+    <state width="2505" height="159" key="GridCell.Tab.0.right/3840.0.1920.1020/0.0.2560.1400@0.0.2560.1400" timestamp="1592136593864" />
+    <state width="2505" height="477" key="GridCell.Tab.1.bottom" timestamp="1591951363008">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="477" key="GridCell.Tab.1.bottom/3840.0.1920.1020/0.0.2560.1400@0.0.2560.1400" timestamp="1591951363008" />
+    <state width="2505" height="477" key="GridCell.Tab.1.center" timestamp="1591951363008">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="477" key="GridCell.Tab.1.center/3840.0.1920.1020/0.0.2560.1400@0.0.2560.1400" timestamp="1591951363008" />
+    <state width="2505" height="477" key="GridCell.Tab.1.left" timestamp="1591951363008">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="477" key="GridCell.Tab.1.left/3840.0.1920.1020/0.0.2560.1400@0.0.2560.1400" timestamp="1591951363008" />
+    <state width="2505" height="477" key="GridCell.Tab.1.right" timestamp="1591951363008">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="477" key="GridCell.Tab.1.right/3840.0.1920.1020/0.0.2560.1400@0.0.2560.1400" timestamp="1591951363008" />
+    <state x="469" y="104" key="SettingsEditor" timestamp="1592045090432">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="352" y="77" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591170671121" />
+    <state x="469" y="104" key="SettingsEditor/3840.0.1920.1020/0.0.2560.1400@0.0.2560.1400" timestamp="1592045090432" />
+    <state x="784" y="406" key="com.intellij.ide.util.TipDialog" timestamp="1591951378567">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="523" y="298" key="com.intellij.ide.util.TipDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1591761503377" />
+    <state x="588" y="302" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591170696735" />
+    <state x="784" y="406" key="com.intellij.ide.util.TipDialog/3840.0.1920.1020/0.0.2560.1400@0.0.2560.1400" timestamp="1591951378567" />
+    <state x="500" y="44" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591064151538">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="500" y="44" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591064151538" />
+    <state x="719" y="7" width="1120" height="1392" key="search.everywhere.popup" timestamp="1592044994660">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591072956050" />
+    <state x="719" y="7" width="1120" height="1392" key="search.everywhere.popup/3840.0.1920.1020/0.0.2560.1400@0.0.2560.1400" timestamp="1592044994660" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/harry$game.coverage" NAME="game Coverage Results" MODIFIED="1590909566641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/harry$The_Dangerous_Quidditch.coverage" NAME="The Dangerous Quidditch Coverage Results" MODIFIED="1592136514634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/harry$pygame_functions.coverage" NAME="pygame_functions Coverage Results" MODIFIED="1591838371080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/harry$game1.coverage" NAME="game1 Coverage Results" MODIFIED="1591138167439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/harry$test.coverage" NAME="test Coverage Results" MODIFIED="1592047666788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/harry$game2.coverage" NAME="game2 Coverage Results" MODIFIED="1592026960408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

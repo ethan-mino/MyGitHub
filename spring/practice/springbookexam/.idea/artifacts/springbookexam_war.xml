@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springbookexam:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>springbookexam</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="springbookexam.war">
+      <element id="artifact" artifact-name="springbookexam:war exploded" />
+    </root>
+  </artifact>
+</component>
