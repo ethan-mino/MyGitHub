@@ -30,11 +30,9 @@ def print_total_execution_time() :
     print("total execution time : ", str(datetime.timedelta(seconds=total_execution_time)))  # 프로그램 전체 실행시간을 시/분/초로 출력.
 
 def wait_by_selector(selector) : # Selenium을 사용해 테스트를 할때 element를 찾을 수 있도록 Web Page가 로딩이 끝날때 까지 기다려야 함. AJAX를 이용해 만든 Web의 경우 리소스가 로드하는데 부문별로 다를 수 있음.
-    try:    # https://stackoverflow.com/questions/26566799/wait-until-page-is-loaded-with-selenium-webdriver-for-python, https://www.fun-coding.org/crawl_advance6.html 참고
-        myElem = WebDriverWait(browser, DELAY).until(EC.presence_of_element_located((By.CSS_SELECTOR , selector))) # 검색 페이지로 이동한 후 footer가 존재할 때까지 wait
-        #print("Page is ready!")
-    except TimeoutException:
-        print("Loading took too much time!")
+   # https://stackoverflow.com/questions/26566799/wait-until-page-is-loaded-with-selenium-webdriver-for-python, https://www.fun-coding.org/crawl_advance6.html 참고
+    myElem = WebDriverWait(browser, DELAY).until(EC.presence_of_element_located((By.CSS_SELECTOR , selector))) # 검색 페이지로 이동한 후 footer가 존재할 때까지 wait
+    #print("Page is ready!")
 
 def page_scroll():
     more_button = None
@@ -87,26 +85,30 @@ def get_img_url_from_more(img_css_selector):
 
     start_time = time.time()
 
-    wait_by_selector(img_css_selector)  # 다운받으려는 이미지 태그 wait
+    try:
+        wait_by_selector(img_css_selector)  # 다운받으려는 이미지 태그 wait
+    except TimeoutException:
+        print("in get_img_url_from_more()", "Loading took too much time!")
+    else :
+        while staleElement:  # 왜 인지 모르겠지만, staleelementreferenceexception가 발생하지 않을 때까지 기다리지 않으면 이미지의 속성값을 확인할 수 없고 에러가 발생함, 그래서 해당 에러가 발생하지 않을 때까지 while문을 수행하고, 에러가 발생하지 않으면 src 속성을 확인하고 반환함.
+            try:
+                img = browser.find_element_by_css_selector(img_css_selector)  # selector에 해당하는 이미지 element find
 
-    while staleElement :  # 왜 인지 모르겠지만, staleelementreferenceexception가 발생하지 않을 때까지 기다리지 않으면 이미지의 속성값을 확인할 수 없고 에러가 발생함, 그래서 해당 에러가 발생하지 않을 때까지 while문을 수행하고, 에러가 발생하지 않으면 src 속성을 확인하고 반환함.
-        try :
-            img = browser.find_element_by_css_selector(img_css_selector)    # selector에 해당하는 이미지 element find
+                img_url = img.get_attribute('src')  # 이미지의 src 속성을 확인
 
-            img_url = img.get_attribute('src')  # 이미지의 src 속성을 확인
+                if img_url is None:
+                    img_url = img.get_attribute('data-src')  # 이미지의 src 속성이 None인 경우, 이 경우에는 이미지의 data-src 속성값을 확인.
 
-            if img_url is None:
-                img_url = img.get_attribute('data-src') # 이미지의 src 속성이 None인 경우, 이 경우에는 이미지의 data-src 속성값을 확인.
+                cur_time = time.time()  # 왜 인지 모르겠지만, 이미지의 src 속성값이 "http~"로 바뀔때까지 기다리지 않으면, "data~"의 값이 저장되어 있고, 이 url로 이미지를 다운받으면 해상도가 낮은 이미지가 다운로드됨. (오른쪽에 생성되는 이미지가 처음에는 화질이 좋지 않다가 좋게 바뀌는 것?과 관련있지 않나 추측해본다.)
+                # 또한 무작정 "http~"로 바뀔 때까지 기다리면, src 속성이 원래 "data~"인 이미지가 있으면 while문을 벗어나지 못하기 때문에 제한 시간을 주기 위해 현재 시간을 저장함.
 
-            cur_time = time.time()  # 왜 인지 모르겠지만, 이미지의 src 속성값이 "http~"로 바뀔때까지 기다리지 않으면, "data~"의 값이 저장되어 있고, 이 url로 이미지를 다운받으면 해상도가 낮은 이미지가 다운로드됨. (오른쪽에 생성되는 이미지가 처음에는 화질이 좋지 않다가 좋게 바뀌는 것?과 관련있지 않나 추측해본다.)
-                                    # 또한 무작정 "http~"로 바뀔 때까지 기다리면, src 속성이 원래 "data~"인 이미지가 있으면 while문을 벗어나지 못하기 때문에 제한 시간을 주기 위해 현재 시간을 저장함.
-
-            if cur_time > start_time + DELAY or (img_url is not None and "http" in img_url) :   # 제한시간을 초과했거나, "http"를 포함하는 이미지 url을 추출한 경우 while문을 벗어남.
-                staleElement = False
-        except Exception :
-            staleElement = True # Exception이 발생한 경우 while문을 반복
-
-    return img_url  # 추출한 이미지 url을 반환
+                if cur_time > start_time + DELAY or (
+                        img_url is not None and "http" in img_url):  # 제한시간을 초과했거나, "http"를 포함하는 이미지 url을 추출한 경우 while문을 벗어남.
+                    staleElement = False
+            except Exception:
+                staleElement = True  # Exception이 발생한 경우 while문을 반복
+    finally:
+        return img_url  # 추출한 이미지 url 또는 None을 반환
 
 def page_image_download() : # 현재의 페이지에서 이미지를 다운로드 함.
     global counter
@@ -134,7 +136,7 @@ chrome_options.add_argument('headless')
 chrome_options.add_argument('--disable-gpu')
 chrome_options.add_argument('lang=ko_KR')
 
-browser = webdriver.Chrome('./chromedriver.exe') # 첫 인자는 chrome driver의 경로, 두번째 인자는 headless를 사용할 경우에만 options = chrome_options)
+browser = webdriver.Chrome('./chromedriver.exe', options = chrome_options) # 첫 인자는 chrome driver의 경로, 두번째 인자는 headless를 사용할 경우에만 options = chrome_options)
 header = {'User-Agent': "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36"}
 options = webdriver.ChromeOptions()
 options.add_argument('headless')
@@ -171,18 +173,22 @@ for url in url_list :
             if img_url is not None: # get_img_url_from_more() 함수에서 이미지의 url을 추출한 경우
                 image_download_by_url(img_url)  # url로부터 이미지를 다운받는다.
 
-            wait_by_selector("a[class = 'ZuJDtb']")  # 더보기 a 태그 wait.(더보기 a 태그는 없을 수 있다.)
+            try :
+                wait_by_selector("a[class = 'ZuJDtb']")  # 더보기 a 태그 wait.(더보기 a 태그는 없을 수 있다.)
+            except TimeoutException :
+                continue
+            else :
+                a_more = browser.find_element_by_css_selector("a[class = 'ZuJDtb']")  # 더보기 a 태그 find
+                a_more.click()  # 더보기 클릭.
 
-            a_more = browser.find_element_by_css_selector("a[class = 'ZuJDtb']")    # 더보기 a 태그 find
-            a_more.click()  # 더보기 클릭.
+                wait_by_selector("#ZCHFDb")  # page load 기다림 (ZCHFDb는 footer의 id)
 
-            wait_by_selector("#ZCHFDb")  # page load 기다림 (ZCHFDb는 footer의 id)
+                page_scroll()  # 페이지의 끝까지 스크롤한다.
+                page_image_download()  # 이동한 페이지의 이미지들을 download한다.
 
-            page_scroll()  # 페이지의 끝까지 스크롤한다.
-            page_image_download()  # 이동한 페이지의 이미지들을 download한다.
-
-            cur_page_download_time = time.time() - cur_page_download_start  # 실행시간
-            print("current page download time : ", str(datetime.timedelta(seconds=cur_page_download_time)))  # 현재 페이지를 다운로드하는데 소요된 시간을 시/분/초로 출력.
+                cur_page_download_time = time.time() - cur_page_download_start  # 실행시간
+                print("current page download time : ",
+                      str(datetime.timedelta(seconds=cur_page_download_time)))  # 현재 페이지를 다운로드하는데 소요된 시간을 시/분/초로 출력.
         except Exception as ERR :
             traceback.print_exc()   # error stack trace 출력.
             print("in for statement : " + str(ERR))
